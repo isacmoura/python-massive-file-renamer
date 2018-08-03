@@ -2,12 +2,14 @@ import os
 import string
 
 def rename_files():
-    list_photos = os.listdir("/home/isacmoura/Documentos/prank");
+    # receive the path of the photo from the user
+    path = raw_input('Insert the path of the directory of the photos\n');
+    list_photos = os.listdir(path);
     
     # Saving the current directory
     saved_path = os.getcwd();
     # changing the working directory to the local of the photos
-    os.chdir("/home/isacmoura/Documentos/prank");
+    os.chdir(path);
     
     # for each photo in list_photos, rename them
     for file_name in list_photos:
