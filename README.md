@@ -4,4 +4,4 @@ Python file renamer for deleting numbers in file names. It has an implementation
 
 # Next steps:
 - Implement a GUI
-- Implement a function to delete more characters selected by the user
+- Update to Python 3.6
